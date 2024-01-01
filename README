@@ -1,0 +1,5 @@
+README
+
+I have implemented myexit, mycd, mypwd commands as INTERNAL COMMANDS, and mytree.x, mytime.x, mymtimes.x and mytimeout.c as EXTERNAL COMMANDS.
+My toolkit is working fine with everything.
+But I just want to let you know since I've used gets to take the input, compilation will generate a warning, but that no way effects the execution.
