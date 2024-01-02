@@ -1,5 +1,61 @@
-README
+MyToolkit - Unix Systems Toolkit
+MyToolkit is a simple Unix systems toolkit for process and filesystem management, inspired by Unix shells like bash and Unix systems forensic toolkits like Sleuth Kit.
 
-I have implemented myexit, mycd, mypwd commands as INTERNAL COMMANDS, and mytree.x, mytime.x, mymtimes.x and mytimeout.c as EXTERNAL COMMANDS.
-My toolkit is working fine with everything.
-But I just want to let you know since I've used gets to take the input, compilation will generate a warning, but that no way effects the execution.
+Table of Contents
+Features
+Commands
+Usage
+External Commands
+mytimeout.x
+Pipes and I/O Redirection
+Termination
+Building and Running
+Contributing
+License
+
+Features
+myexit: Terminate the toolkit.
+mycd: Change the current working directory.
+mypwd: Print the absolute path of the current working directory.
+External Commands: Run any existing external Unix commands.
+mytimeout.x: Run a command with a time limit.
+Pipes: Support piping commands.
+I/O Redirection: Support input/output redirection.
+Termination on EOF: Terminate on encountering the end of file character (CTRL-D).
+
+Commands
+myexit: Terminate the toolkit.
+
+myexit
+
+mycd: Change the current working directory.
+
+mycd <dir>
+
+mypwd: Print the absolute path of the current working directory.
+
+mypwd
+
+Usage
+Run the toolkit.
+Enter commands following Unix shell syntax.
+External Commands
+Run any existing external Unix commands in the system, including mytree.x, mymtimes.x, and mytimes.x
+
+mytimeout.x
+Run a command with a time limit.
+mytimeout.x <seconds> <cmd> [cmd-args]
+
+Pipes and I/O Redirection
+Support pipes and I/O redirection in command lines.
+
+Pipes:
+command1 | command2 | command3 | command4
+
+I/O Redirection:
+command1 < file1
+command1 > file1
+command1 < file1 > file2
+
+Termination
+Terminate the toolkit on encountering the end of file character (CTRL-D).
